@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <header class="header_big">HTML & CSS Documentation</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Structure_of_an_HTML_Document"
+                        >Structure of an HTML Document</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Common_HTML_Elements"
+                        >Common HTML Elements</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#CSS_Basics">CSS Basics</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#CSS_Syntax">CSS Syntax</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Types_of_CSS">Types of CSS</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Selectors">Selectors</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Box_Model">Box Model</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Advanced_HTML_Features"
+                        >Advanced HTML Features</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Forms">Forms</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Media_Elements"
+                        >Media Elements</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Semantic_HTML">Semantic HTML</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Advanced_CSS_Techniques"
+                        >Advanced CSS Techniques</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Responsive_Design"
+                        >Responsive Design</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Flexbox">Flexbox</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Grid_Layout">Grid Layout</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Animations_and_Transitions"
+                        >Animations and Transitions</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Best_Practices"
+                        >Best Practices</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Accessibility">Accessibility</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Performance_Optimization"
+                        >Performance Optimization</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#SEO_Considerations"
+                        >SEO Considerations</a
+                    >
+                </li>
+                <li>
+                    <a class="nav-link" href="#Resources">Resources</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header class="header_big">Introduction</header>
+                <p>
+                    HTML (Hypertext Markup Language) and CSS (Cascading Style
+                    Sheets) are the fundamental technologies for building web
+                    pages. HTML provides the structure of the page, while CSS is
+                    used to control the layout, design, and visual presentation.
+                </p>
+            </section>
+            <hr />
+            <section class="main-section" id="HTML_Basics">
+                <header class="header_big">HTML Basics</header>
+            </section>
+            <section class="main-section" id="Structure_of_an_HTML_Document">
+                <header>Structure of an HTML Document</header>
+                <p>
+                    An HTML document is structured with tags and elements. A
+                    typical HTML document includes the following components:
+                </p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+                    &lt;html lang=&quot;en&quot;&gt;
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                        &lt;title&gt;Document Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;!-- Content goes here --&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code></pre>
+                <ul>
+                    <li>
+                        <strong>&lt;!DOCTYPE html&gt;</strong>: Declares the
+                        document type and version of HTML.
+                    </li>
+                    <li>
+                        <strong>&lt;html&gt;</strong>: The root element of the
+                        document.
+                    </li>
+                    <li>
+                        <strong>&lt;head&gt;</strong>: Contains meta-information
+                        about the document.
+                    </li>
+                    <li>
+                        <strong>&lt;title&gt;</strong>: Specifies the title of
+                        the document shown in the browser tab.
+                    </li>
+                    <li>
+                        <strong>&lt;body&gt;</strong>: Contains the content of
+                        the HTML document.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="Common_HTML_Elements">
+                <header>Common HTML Elements</header>
+                <p>Headings</p>
+                <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+                    &lt;header&gt;Heading 2&lt;/header&gt;
+                    &lt;h3&gt;Heading 3&lt;/h3&gt;
+                </code></pre>
+                <p>Links</p>
+                <pre><code>&lt;a href=&quot;URL&quot;&gt;Link Text&lt;/a&gt;
+                </code></pre>
+                <p>Images</p>
+                <pre><code>&lt;img src=&quot;image.jpg&quot; alt=&quot;description&quot;&gt;
+                </code></pre>
+                <p>Lists</p>
+                <pre><code>&lt;ul&gt;
+                    &lt;li&gt;List item 1&lt;/li&gt;
+                    &lt;li&gt;List item 2&lt;/li&gt;
+                &lt;/ul&gt;
+                
+                &lt;ol&gt;
+                    &lt;li&gt;Ordered item 1&lt;/li&gt;
+                    &lt;li&gt;Ordered item 2&lt;/li&gt;
+                &lt;/ol&gt;                
+                </code></pre>
+                <p>Divisions</p>
+                <pre><code>&lt;div&gt;This is a division.&lt;/div&gt;
+                </code></pre>
+                <p>Spans</p>
+                <pre><code>&lt;span&gt;This is a span.&lt;/span&gt;
+                </code></pre>
+            </section>
+            <hr />
+            <section class="main-section" id="CSS_Basics">
+                <header class="header_big">CSS Basics</header>
+            </section>
+            <section class="main-section" id="CSS_Syntax">
+                <header>CSS Syntax</header>
+                <p>
+                    CSS is used to apply styles to HTML elements. The basic
+                    syntax of a CSS rule consists of a selector and a
+                    declaration block:
+                </p>
+                <code>selector { property: value; } </code>
+            </section>
+            <section class="main-section" id="Types_of_CSS">
+                <header>Types of CSS</header>
+                <ol>
+                    <li>
+                        <strong>Inline CSS:</strong> Styles applied directly
+                        within an HTML element using the `style` attribute.
+                    </li>
+                    <code
+                        >&lt;p style=&quot;color: red;&quot;&gt;This is a red
+                        paragraph.&lt;/p&gt;
+                    </code>
+                    <li>
+                        <strong>Internal CSS</strong>: Styles defined within the
+                        &lt;style&gt; tag in the &lt;head&gt; section of an HTML
+                        document.
+                    </li>
+                    <code
+                        >&lt;style&gt; p { color: green; } &lt;/style&gt;
+                    </code>
+                    <li>
+                        <strong>External CSS</strong>: Styles defined in an
+                        external stylesheet file, linked using the &lt;link&gt;
+                        tag.
+                    </li>
+                    <code
+                        >&lt;link rel=&quot;stylesheet&quot;
+                        href=&quot;styles.css&quot;&gt;
+                    </code>
+                </ol>
+            </section>
+            <section class="main-section" id="Selectors">
+                <header>Selectors</header>
+                <p>
+                    CSS selectors are used to target HTML elements for styling.
+                    Common selectors include:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Element Selector</strong>: Targets elements by
+                        name, e.g., `p { color: blue; }`
+                    </li>
+                    <li>
+                        <strong>Class Selector</strong>: Targets elements by
+                        class, e.g., .`class-name { color: green; }`
+                    </li>
+                    <li>
+                        <strong>ID Selector</strong>: Targets elements by ID,
+                        e.g., `#id-name { color: red; }`
+                    </li>
+                    <li>
+                        <strong>Attribute Selector</strong>: Targets elements
+                        with a specific attribute, e.g., `[type="text"] { color:
+                        black; }`
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="Box_Model">
+                <header>Box Model</header>
+                <p>
+                    The CSS box model describes the layout of HTML elements. It
+                    consists of:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Content</strong>: The actual content inside the
+                        box.
+                    </li>
+                    <li>
+                        <strong>Padding</strong>: Space between the content and
+                        the border.
+                    </li>
+                    <li><strong>Border</strong>: The edge of the element.</li>
+                    <li>
+                        <strong>Margin</strong>: Space outside the border,
+                        separating the element from others.
+                    </li>
+                </ul>
+                <p>Example:</p>
+                <code
+                    >div { width: 200px; padding: 10px; border: 5px solid black;
+                    margin: 20px; }
+                </code>
+            </section>
+            <hr />
+            <section class="main-section" id="Advanced_HTML_Features">
+                <header class="header_big">Advanced HTML Features</header>
+            </section>
+            <section class="main-section" id="Forms">
+                <header>Forms</header>
+                <p>
+                    Forms are used to collect user input. Key elements include:
+                </p>
+                <ul>
+                    <li><strong>&lt;form&gt;</strong>: Defines the form.</li>
+                    <li>
+                        <strong>&lt;input&gt;</strong>: Collects user data
+                        (e.g., text, password, submit).
+                    </li>
+                    <li>
+                        <strong>&lt;textarea&gt;</strong>: Multiline text input.
+                    </li>
+                    <li><strong>&lt;select&gt;</strong>: Dropdown list.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Media_Elements">
+                <header>Media Elements</header>
+                <p>HTML supports various media elements, including:</p>
+                <ul>
+                    <li>
+                        <strong>Images</strong>: &lt;img src="image.jpg"
+                        alt="description"&gt;
+                    </li>
+                    <li>
+                        <strong>Videos</strong>: &lt;video src="video.mp4"
+                        controls&gt;&lt;/video&gt;
+                    </li>
+                    <li>
+                        <strong>Audio</strong>: &lt;audio src="audio.mp3"
+                        controls&gt;&lt;/audio&gt;
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="Semantic_HTML">
+                <header>Semantic HTML</header>
+                <p>
+                    Semantic HTML uses elements that clearly describe their
+                    meaning:
+                </p>
+                <ul>
+                    <li><strong>Header</strong>: &lt;header&gt;</li>
+                    <li><strong>Nav</strong>: &lt;nav&gt;</li>
+                    <li><strong>Main</strong>: &lt;main&gt;</li>
+                    <li><strong>Footer</strong>: &lt;footer&gt;</li>
+                    <li><strong>Article</strong>: &lt;article&gt;</li>
+                    <li><strong>Section</strong>: &lt;section&gt;</li>
+                </ul>
+            </section>
+            <hr />
+            <section class="main-section" id="Advanced_CSS_Techniques">
+                <header class="header_big">Advanced CSS Techniques</header>
+            </section>
+            <section class="main-section" id="Responsive_Design">
+                <header>Responsive Design</header>
+                <p>
+                    Responsive design ensures that web pages look good on all
+                    devices. Techniques include:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Media Queries</strong>: Apply styles based on
+                        device characteristics.
+                    </li>
+                    <code
+                        >@media (max-width: 600px) { body { background-color:
+                        lightblue; } }
+                    </code>
+                    <li>
+                        <strong>Fluid Layouts</strong>: Use percentage-based
+                        widths for flexible layouts.
+                    </li>
+                    <code>.container { width: 80%; } </code>
+                </ul>
+            </section>
+            <section class="main-section" id="Flexbox">
+                <header>Flexbox</header>
+                <p>
+                    Flexbox is a layout module that allows for flexible and
+                    responsive design. Key properties include:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Display</strong>: Set an element to `flex` or
+                        `inline-flex`.
+                    </li>
+                    <li>
+                        <strong>Justify-content</strong>: Aligns items along the
+                        main axis.
+                    </li>
+                    <li>
+                        <strong>Align-items</strong>: Aligns items along the
+                        cross axis.
+                    </li>
+                </ul>
+                <p>Example:</p>
+                <code
+                    >.container { display: flex; justify-content: space-between;
+                    align-items: center; }
+                </code>
+            </section>
+            <section class="main-section" id="Grid_Layout">
+                <header>Grid Layout</header>
+                <p>
+                    CSS Grid is a powerful layout system that allows for
+                    two-dimensional layouts. Key properties include:
+                </p>
+                <ul>
+                    <li><strong>Display</strong>: Set an element to grid.</li>
+                    <li>
+                        <strong>Grid-template-columns</strong> and
+                        <strong>grid-template-rows</strong>: Define the
+                        structure.
+                    </li>
+                    <li>
+                        <strong>Gap</strong>: Defines spacing between grid
+                        items.
+                    </li>
+                </ul>
+                <p>Example:</p>
+                <code
+                    >.container { display: grid; grid-template-columns: 1fr 2fr;
+                    gap: 10px; }
+                </code>
+            </section>
+            <section class="main-section" id="Animations_and_Transitions">
+                <header>Animations and Transitions</header>
+                <p>
+                    CSS allows for animations and transitions to create dynamic
+                    effects:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Transitions</strong>: Smooth changes between
+                        states.
+                    </li>
+                    <code
+                        >.box { transition: background-color 0.5s ease; }
+                        .box:hover { background-color: blue; }
+                    </code>
+                    <li>
+                        <strong>Animations</strong>: More complex,
+                        keyframe-based animations.
+                    </li>
+                    <code
+                        >@keyframes slide { from { transform: translateX(0); }
+                        to { transform: translateX(100px); } } .box { animation:
+                        slide 2s forwards; }
+                    </code>
+                </ul>
+            </section>
+            <hr />
+            <section class="main-section" id="Best_Practices">
+                <header class="header_big">Best Practices</header>
+            </section>
+            <section class="main-section" id="Accessibility">
+                <header>Accessibility</header>
+                <p>Ensure that your web content is accessible to all users:</p>
+                <ul>
+                    <li>
+                        <strong>Alt Text</strong>: Provide descriptive text for
+                        images.
+                    </li>
+                    <li>
+                        <strong>ARIA Roles</strong>: Enhance accessibility for
+                        screen readers.
+                    </li>
+                    <li>
+                        <strong>Keyboard Navigation</strong>: Ensure all
+                        interactive elements are keyboard accessible.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="Performance_Optimization">
+                <header>Performance Optimization</header>
+                <p>Optimize your web pages for faster load times:</p>
+                <ul>
+                    <li>
+                        <strong>Minimize HTTP Requests</strong>: Reduce the
+                        number of external resources.
+                    </li>
+                    <li>
+                        <strong>Use Minified Files</strong>: Compress CSS,
+                        JavaScript, and HTML files.
+                    </li>
+                    <li>
+                        <strong>Lazy Loading</strong>: Load images and other
+                        media as they come into the viewport.
+                    </li>
+                </ul>
+            </section>
+            <section class="main-section" id="SEO_Considerations">
+                <header>SEO Considerations</header>
+                <p>Improve your site's search engine ranking:</p>
+                <ul>
+                    <li>
+                        <strong>Meta Tags</strong>: Use descriptive meta tags
+                        for SEO.
+                    </li>
+                    <li>
+                        <strong>Clean URLs</strong>: Ensure URLs are descriptive
+                        and readable.
+                    </li>
+                    <li>
+                        <strong>Content Structure</strong>: Use headings and
+                        semantic HTML to structure content.
+                    </li>
+                </ul>
+            </section>
+            <hr />
+            <section class="main-section" id="Resources">
+                <header class="header_big">Resources</header>
+                <ul>
+                    <li>
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                            target="_blank"
+                            >MDN Web Docs (HTML)</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                            target="_blank"
+                            >MDN Web Docs (CSS)</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.w3schools.com/html/default.asp"
+                            target="_blank"
+                            >W3Schools HTML Tutorial</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.w3schools.com/css/default.asp "
+                            target="_blank"
+                            >W3Schools CSS Tutorial</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://caniuse.com/" target="_blank"
+                            >Can I Use (Browser Support)</a
+                        >
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
